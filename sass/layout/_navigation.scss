@@ -1,0 +1,300 @@
+
+.navbar{
+    width: 100%;
+    min-height: 15vh;
+    
+}
+
+.logo img{
+    width: 188px;
+}
+
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation li{
+    margin: 0 25px;
+    height: 100%;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: $white;
+    font-family: $secondary-font;
+    font-size: 1.2em;
+}
+
+.navigation a:hover{
+    border-bottom: 1px solid $white;
+}
+
+
+.mobile-btn{
+    display: none;
+}
+
+.line1{
+    width: 40px;
+    height: 3px;
+    background: $white;
+    margin-bottom: 7px;
+}
+
+ .line2{
+    width: 40px;
+    height: 3px;
+    background: $white;
+}
+
+ .line3{
+    margin-top: 7px;
+    width: 40px;
+    height: 3px;
+    background: $white;
+}
+
+
+
+.btn__top{
+    z-index: 5;
+    background: $normal-blue;
+    position: absolute;
+    bottom: 8%;
+    right: 2%;
+    padding: 12px 15px;
+    border-radius:100px;
+    box-shadow: inset 0 0 3em $dark-blue;
+    position: fixed;
+    display: none;
+}
+
+.btn__top a{
+    width: 100%;
+    height: 100%;
+}
+
+.btn__top--active{
+   display: block;
+}
+
+.btn__top:hover{
+    background: $normal-blue;
+    opacity: 0.8;cursor: pointer;
+    
+}
+
+.btn__top--img{
+    height: 22px;
+    
+}
+
+
+
+
+
+
+/* Media querie*/
+
+@media (max-width: 575.98px) { 
+    
+    .mobile-btn{
+        display: block;
+        cursor: pointer;
+    }
+  
+    .navigation{
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        min-height: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: all 1s;
+    }
+
+    .navigation li{
+        margin: 8px auto ;
+        opacity: 0;
+    }
+
+    .navigation__active{
+        
+        transition: all 1s;
+    }
+
+    .navigation__active ul{
+        display: block;
+        transition: all 1s;
+    }
+
+    .navigation__active li{
+        opacity: 100%;
+        transition: all 1s;
+    }
+
+    .btn__top--img{
+        height: 18px;
+        
+    }
+
+
+
+
+  
+   
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+   
+    .mobile-btn{
+        display: block;
+        cursor: pointer;
+    }
+  
+    .navigation{
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        min-height: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: all 1s;
+    }
+
+    .navigation li{
+        margin: 8px auto ;
+        opacity: 0;
+    }
+
+    .navigation__active{
+        
+        transition: all 1s;
+    }
+
+    .navigation__active ul{
+        display: block;
+        transition: all 1s;
+    }
+
+    .navigation__active li{
+        opacity: 100%;
+        transition: all 1s;
+    }
+
+
+    .btn__top--img{
+        height: 18px;
+        
+    }
+   
+  
+
+  
+  
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+    .mobile-btn{
+        display: block;
+        cursor: pointer;
+    }
+  
+    .navigation{
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        min-height: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: all 1s;
+    }
+
+    .navigation li{
+        margin: 8px auto ;
+        opacity: 0;
+    }
+
+    .navigation__active{
+        
+        transition: all 1s;
+    }
+
+    .navigation__active ul{
+        display: block;
+        transition: all 1s;
+    }
+
+    .navigation__active li{
+        opacity: 100%;
+        transition: all 1s;
+    }
+
+    
+    .btn__top--img{
+        height: 18px;
+        
+    }
+    
+
+    
+
+   
+   
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+   
+   
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+   
+}
